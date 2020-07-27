@@ -1,9 +1,5 @@
 version : '2'
 
-volumes:
-  nextcloud:
-  nextcloud_mysql:
-  
 services:
   nextcloud_mysql:
     image: mysql:latest
