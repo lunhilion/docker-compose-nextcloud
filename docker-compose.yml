@@ -5,10 +5,10 @@ services:
     image: mysql:latest
     container_name: nextcloud_mysql
     environment:
-      MYSQL_USER: nextcloud
-      MYSQL_PASSWORD: mapafraso
-      MYSQL_ROOT_PASSWORD: mapafraso
-      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
 
   nextcloud_phpmyadmin:
     image: phpmyadmin/phpmyadmin
