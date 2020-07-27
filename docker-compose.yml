@@ -34,3 +34,14 @@ services:
     links:
       - nextcloud_mysql
     restart: always
+    
+  volumes:
+    nextcloud:
+      driver: local-persist
+      driver_opts:
+        mountpoint: /media/HDD4/nextcloud
+        
+    nextcloud_mysql:
+      driver: local-persist
+      driver_opts:
+        mountpoint: /media/HDD4/nextcloud_mysql
